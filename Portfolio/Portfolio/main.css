@@ -1,0 +1,682 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", serif;
+}
+
+.profile {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: linear-gradient(to right, rgb(1, 1, 1) 65%, rgb(145, 255, 0) 35%);
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.main {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-start;
+}
+.main .nav-bar {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .nav-bar .logo {
+  width: 20%;
+  font-size: 38px;
+  font-weight: 600;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+.main .nav-bar .lets-talk {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-end;
+  align-items: center;
+}
+.main .nav-bar .lets-talk button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s linear;
+  background-color: black;
+}
+.main .nav-bar .lets-talk button a {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s linear;
+}
+.main .nav-bar .lets-talk button:hover {
+  background-color: white;
+}
+.main .nav-bar .lets-talk button:hover a {
+  color: black;
+}
+.main .nav-bar .actions {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+.main .nav-bar .actions li {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+.main .nav-bar .actions li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  align-self: center;
+  position: relative;
+  top: 12px;
+}
+.main .nav-bar .actions li hr {
+  justify-self: center;
+  position: relative;
+  top: 10px;
+  border: 2px solid white;
+  width: 0px;
+  text-align: center;
+  visibility: hidden;
+  transition: width 0.3s linear;
+}
+.main .nav-bar .actions li:hover hr {
+  visibility: visible;
+  width: 100%;
+}
+.main .content {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.main .content .info {
+  width: 50%;
+  height: 100%;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.main .content .info .name {
+  color: white;
+  font-size: 70px;
+  font-weight: 600;
+}
+.main .content .info .designation {
+  color: white;
+  font-size: 34px;
+  font-weight: 600;
+}
+.main .content .info .other-info {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+}
+.main .content .info .other-info .buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  background-color: rgba(134, 36, 36, 0.089);
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid white;
+  transition: background-color 0.3s linear;
+}
+.main .content .info .other-info .buttons:hover {
+  background-color: white;
+  border: 1px solid white;
+}
+.main .content .info .other-info .buttons:hover .btn a {
+  color: black;
+}
+.main .content .info .other-info .buttons:hover .arrow {
+  fill: black;
+}
+.main .content .info .other-info .resume svg {
+  transform: rotate(90deg);
+}
+.main .content .info .btn {
+  background-color: rgba(255, 255, 255, 0);
+}
+.main .content .info .btn a {
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  font-weight: 400;
+  transition: color 0.3s linear;
+}
+.main .content .info .arrow {
+  height: 15x;
+  width: 15px;
+  fill: white;
+  transition: fill 0.3s linear;
+}
+.main .content .photo {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-end;
+  justify-content: center;
+}
+.main .content .photo img {
+  height: 100%;
+  width: 90%;
+}
+
+.my-projects {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: center;
+  align-items: center;
+}
+.my-projects .project-list {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.my-projects .project-list .title {
+  width: 100%;
+  height: 140px;
+  font-size: 44px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: center;
+  align-items: center;
+}
+.my-projects .project-list .project1 {
+  background-image: url("../images/project1.jpg");
+}
+.my-projects .project-list .project2 {
+  background-image: url("../images/project-3 (1).jpg");
+}
+.my-projects .project-list .project3 {
+  background-image: url("../images/proj3.jpg");
+}
+.my-projects .project-list .projects {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  color: white;
+  padding: 40px;
+  background-size: cover;
+}
+.my-projects .project-list .projects .btn {
+  background-color: rgba(255, 255, 255, 0);
+}
+.my-projects .project-list .projects .btn a {
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  font-weight: 400;
+  transition: color 0.3s linear;
+}
+.my-projects .project-list .projects .arrow {
+  height: 15x;
+  width: 15px;
+  fill: white;
+  transition: fill 0.3s linear;
+}
+.my-projects .project-list .projects .buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  z-index: 0;
+  backdrop-filter: blur(10px);
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid white;
+  transition: background-color 0.3s linear;
+}
+.my-projects .project-list .projects .buttons:hover {
+  background-color: white;
+  border: 1px solid white;
+}
+.my-projects .project-list .projects .buttons:hover .btn a {
+  color: black;
+}
+.my-projects .project-list .projects .buttons:hover .arrow {
+  fill: black;
+}
+.my-projects .project-list .projects .description {
+  width: 40%;
+  height: 70%;
+  background-color: rgba(255, 255, 255, 0.125);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 8px;
+  backdrop-filter: blur(6px);
+}
+.my-projects .project-list .projects .description .view-project {
+  width: 38%;
+}
+.my-projects .project-list .projects .domains {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: center;
+  background-color: rgb(1, 1, 1);
+  margin-top: 50px;
+  padding: 40px;
+}
+.about .my-study-qualification {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: center;
+}
+.about .my-study-qualification .circle {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+.about .my-study-qualification .circle .green {
+  height: 60%;
+  width: 70%;
+  border-radius: 50%;
+  background-color: rgb(145, 255, 0);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.about .my-study-qualification .circle .green p {
+  font-size: 60px;
+  font-weight: 600;
+}
+.about .my-study-qualification .education-details {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.about .my-study-qualification .education-details .education {
+  text-transform: uppercase;
+  color: rgb(145, 255, 0);
+  font-size: 30px;
+  font-weight: 600;
+}
+.about .my-study-qualification .education-details .qualification {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.about .my-study-qualification .education-details .percentage, .about .my-study-qualification .education-details .duration {
+  font-weight: 600;
+}
+.about .my-study-qualification .education-details .medias {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+}
+.about .my-study-qualification .education-details .medias .icons {
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: rgba(134, 36, 36, 0.089);
+  transition: background-color 0.3s linear;
+  cursor: pointer;
+}
+.about .my-study-qualification .education-details .medias svg {
+  margin: 8px 8px 4px;
+  fill: white;
+  transition: fill 0.5s linear;
+}
+.about .my-study-qualification .education-details .medias .icons:hover {
+  background-color: white;
+}
+.about .my-study-qualification .education-details .medias .icons:hover svg {
+  fill: black;
+}
+
+.contact-me {
+  width: 100vw;
+  height: 110vh;
+  background-color: rgba(245, 245, 220, 0.142);
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px;
+}
+.contact-me .contact-details {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-me .contact-details .form {
+  width: 50%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.834);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 40px;
+}
+.contact-me .contact-details .form .moto {
+  font-size: 42px;
+}
+.contact-me .contact-details .form .get-in-touch {
+  color: rgba(252, 250, 250, 0.786);
+}
+.contact-me .contact-details .form .message {
+  font-weight: 500;
+}
+.contact-me .contact-details .form .firstname-email {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-me .contact-details .form .text-input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact-me .contact-details .form .text-input input {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.552);
+  color: white;
+}
+.contact-me .contact-details .form .textarea {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact-me .contact-details .form .textarea textarea {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.552);
+  color: white;
+}
+.contact-me .contact-details .form .send-message {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.552);
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+.contact-me .contact-details .form .send-message a {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+}
+.contact-me .contact-details .discuss {
+  width: 40%;
+  height: 100%;
+  justify-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+}
+.contact-me .contact-details .discuss > p {
+  font-size: 28px;
+  font-weight: 600;
+}
+.contact-me .contact-details .discuss .other-contacts {
+  width: 80%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.contact-me .contact-details .discuss .other-contacts .contact {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.contact-me .contact-details .discuss .other-contacts .contact .icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 6px;
+  transition: background-color 0.3s linear;
+  cursor: pointer;
+}
+.contact-me .contact-details .discuss .other-contacts .contact .icon svg {
+  color: black;
+  font-size: 16px;
+  width: 50%;
+  height: 50%;
+  transition: fill 0.3s linear;
+}
+.contact-me .contact-details .discuss .other-contacts .contact .icon:hover {
+  background-color: black;
+}
+.contact-me .contact-details .discuss .other-contacts .contact .icon:hover svg {
+  fill: white;
+}
+.contact-me .contact-details .discuss .other-contacts .contact .contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 90%;
+  
+}/*# sourceMappingURL=main.css.map */
+@media only screen and (max-width: 600px) {
+  .main{
+    width: 100%;
+  }
+  .profile{
+    height: 100vh;
+  }
+  .main .nav-bar{
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    height: 17vh;
+    align-items: center;
+    padding: 10px 5px;
+    gap: 0;
+  }
+  .main .nav-bar .actions{
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: black;
+    padding: 0px 5px 10px 5px;
+    position: fixed;
+    top: 60px;
+  }
+  .main .nav-bar .actions li a{
+    font-size: 14px;
+  }
+  .main .nav-bar .lets-talk{
+    width: 100%;
+    justify-content: center;
+    background-color: black;
+    padding-top:90px ;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.221);
+  }
+  .main .nav-bar .logo{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 32px;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    padding: 10px 0px;
+  }
+  .main .content .info{
+    width: 100%;
+    height: 60%;
+  }
+  .main .content .info .designation{
+    font-size: 26px;
+  }
+  .main .content .photo{
+    width: 100%;
+    height: 40%;
+  }
+  .main .content .photo img{
+    width: 50%;
+    height: 100%;
+    margin-left: 70px;
+  }
+
+  .main .content{
+    padding: 0;
+    height: 83vh;
+    flex-direction: column;
+  }
+  .main .content .info{
+    width: 100%;
+    padding: 0 5vw;
+  }
+  .main .content .info .other-info{
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .main .content .info .other-info .buttons{
+    width: 60%;
+  }
+  .my-projects{
+    display: none;
+  }
+
+  .about{
+    margin: 0;
+    padding: 30px;
+  }
+  .about .my-study-qualification .circle{
+    display: none;
+  }
+  .about .my-study-qualification{
+    width: 90%;
+    
+  }
+  .about .my-study-qualification .education-details{
+    width: 100%;
+  }
+  .contact-me{
+    height: 140vh;
+    padding: 10px 0;
+    
+  }
+  .contact-me .contact-details{
+    flex-direction: column;
+    width: 90%;
+    gap: 20px;
+    justify-content: space-evenly;
+  }
+  .contact-me .contact-details .form{
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    gap: 24px;
+  }
+  .contact-me .contact-details .form .firstname-email{
+    flex-direction: column;
+  }
+  .contact-me .contact-details .discuss{
+    width: 100%;
+  }
+}
